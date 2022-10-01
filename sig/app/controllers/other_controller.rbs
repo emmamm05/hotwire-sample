@@ -1,0 +1,3 @@
+class OtherController < ApplicationController
+  def post_something: () -> untyped
+end

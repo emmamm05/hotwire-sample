@@ -188,9 +188,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rbs (2.6.0)
-    rbs_rails (0.11.0)
-      parser
-      rbs (>= 1)
     regexp_parser (2.6.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -291,8 +288,6 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    typeprof (0.21.3)
-      rbs (>= 1.8.1)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.3.0)
@@ -330,7 +325,6 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4)
   rbs
-  rbs_rails
   rspec-rails
   rubocop-rails
   rubocop-rspec
@@ -343,7 +337,6 @@ DEPENDENCIES
   steep
   stimulus-rails
   turbo-rails
-  typeprof
   tzinfo-data
   web-console
   webdrivers

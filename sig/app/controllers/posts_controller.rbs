@@ -1,0 +1,30 @@
+class PostsController < ApplicationController
+  # GET /posts or /posts.json
+  def index: () -> untyped
+
+  # GET /posts/1 or /posts/1.json
+  def show: () -> nil
+
+  # GET /posts/new
+  def new: () -> untyped
+
+  # GET /posts/1/edit
+  def edit: () -> nil
+
+  # POST /posts or /posts.json
+  def create: () -> untyped
+
+  # PATCH/PUT /posts/1 or /posts/1.json
+  def update: () -> untyped
+
+  # DELETE /posts/1 or /posts/1.json
+  def destroy: () -> untyped
+
+  private
+
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post: () -> untyped
+
+  # Only allow a list of trusted parameters through.
+  def post_params: () -> untyped
+end

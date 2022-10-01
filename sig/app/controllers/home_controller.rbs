@@ -1,0 +1,7 @@
+class HomeController < ApplicationController
+  # @route GET /turbo_frame_form
+  def turbo_frame_form: () -> nil
+
+  # @route GET /turbo_frame_submit
+  def turbo_frame_submit: () -> untyped
+end
