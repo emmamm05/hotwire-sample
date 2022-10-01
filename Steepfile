@@ -29,12 +29,11 @@
 target :app do
   signature "sig"
 
-  check "Gemfile"
   check "app"
 end
 
-target :spec do
-  signature "sig", "sig-private"
+# target :spec do
+#   signature "sig", "sig-private"
 
-  check "spec"
-end
+#   check "spec"
+# end

@@ -67,13 +67,13 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem "rubocop-rails"
-  gem "rubocop-rspec"
-  gem "solargraph"
-  gem "solargraph-standardrb"
-  gem "standard"
-  gem "rbs"
-  gem "steep"
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
+  gem "solargraph", require: false
+  gem "solargraph-standardrb", require: false
+  gem "standard", require: false
+  gem "rbs", require: false
+  gem "steep", require: false
 end
 
 group :test do
