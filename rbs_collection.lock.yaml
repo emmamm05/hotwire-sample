@@ -142,6 +142,10 @@ gems:
     revision: cef6a54ccb3d48a9d19ccd592e24fea493292bcc
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
+- name: rbs
+  version: 2.6.0
+  source:
+    type: rubygems
 - name: rbs_rails
   version: 0.11.0
   source:
@@ -187,6 +191,18 @@ gems:
   source:
     type: stdlib
 - name: tsort
+  version: '0'
+  source:
+    type: stdlib
+- name: set
+  version: '0'
+  source:
+    type: stdlib
+- name: optparse
+  version: '0'
+  source:
+    type: stdlib
+- name: rubygems
   version: '0'
   source:
     type: stdlib
