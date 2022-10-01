@@ -38,3 +38,8 @@ en:
       success: "Post was successfully updated"
     detroy:
       success: "Post was successfully destroyed"
+  messages:
+    create:
+      success: "Message was successfully created"
+    update:
+      success: "Message was successfully updated"
