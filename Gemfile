@@ -72,6 +72,9 @@ group :development do
   gem "solargraph"
   gem "solargraph-standardrb"
   gem "standard"
+  gem "rbs"
+  gem "steep"
+  gem "typeprof"
 end
 
 group :test do
