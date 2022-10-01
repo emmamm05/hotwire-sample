@@ -1,0 +1,3 @@
+class SampleViewComponent::Component < ViewComponent::Base
+  def initialize: (items: untyped) -> void
+end

@@ -1,0 +1,15 @@
+module Broadcast
+  class Message
+    def self.append: (message: untyped) -> untyped
+
+    def initialize: (untyped message) -> void
+
+    def append: () -> untyped
+
+    private
+
+    attr_reader message: untyped
+
+    def rendered_component: () -> untyped
+  end
+end
