@@ -5,6 +5,7 @@
 
 <%= turbo_frame_tag "anyframe" do %>        
   <div>
+    <h2> Home view </h2>
     <%= form_with scope: :any, url: turbo_frame_submit_path, local: true do |form| %>
       <div class="flex flex-col">
         <%= form.label :anynumber, "Type an integer (odd or even)", "class" => "my-0  d-inline"  %>
@@ -14,3 +15,5 @@
     <% end %>
   </div>
 <% end %>
+<button class="bg-sky-500 hover:bg-sky-700">
+<%= render(::Dropdown::Component.new(items: %w[a b c d])) %>
