@@ -1,5 +1,10 @@
 # README
 
+This repository purpose is to test new features of rails 7: hotwire, turbo drive, frame, streams,...
+Also ruby 3.x type-features like rbs, steep & typeprof
+
+# TODO
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
