@@ -73,6 +73,7 @@ group :development do
   gem "solargraph-standardrb"
   gem "standard"
   gem "rbs"
+  gem "rbs_rails"
   gem "steep"
   gem "typeprof"
 end

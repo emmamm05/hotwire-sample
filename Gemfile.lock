@@ -188,6 +188,9 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rbs (2.6.0)
+    rbs_rails (0.11.0)
+      parser
+      rbs (>= 1)
     regexp_parser (2.6.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -327,6 +330,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4)
   rbs
+  rbs_rails
   rspec-rails
   rubocop-rails
   rubocop-rspec
