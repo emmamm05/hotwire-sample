@@ -74,6 +74,7 @@ group :development do
   gem "standard", require: false
   gem "rbs", require: false
   gem "steep", require: false
+  gem "rbs_rails"
 end
 
 group :test do

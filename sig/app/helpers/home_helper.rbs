@@ -1,3 +1,0 @@
-module HomeHelper
-  def do_something: (untyped a) -> nil
-end
