@@ -12,7 +12,7 @@ class MessageComponent < ViewComponent::Base
   delegate :body, :created_at, to: :message, prefix: true
 
   def recent_message?
-    message.created_at > 1.hour.ago
+    message.created_at > 1.minute.ago
   end
 
   def timestamp
