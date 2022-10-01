@@ -1,8 +1,8 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "messages/show", type: :view do
-  before(:each) do
-    @message = assign(:message, Message.create!())
+  before do
+    @message = assign(:message, Message.create!)
   end
 
   it "renders attributes in <p>" do
