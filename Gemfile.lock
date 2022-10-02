@@ -235,6 +235,7 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-rspec (2.13.2)
       rubocop (~> 1.33)
+    ruby-next-core (0.15.2)
     ruby-progressbar (1.11.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.5.0)
@@ -300,6 +301,9 @@ GEM
       activesupport (>= 5.0.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
+    view_component-contrib (0.1.1)
+      ruby-next-core (>= 0.12.0)
+      view_component
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -350,6 +354,7 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   view_component
+  view_component-contrib
   web-console
   webdrivers
 

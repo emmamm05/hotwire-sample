@@ -55,6 +55,7 @@ gem "tailwindcss-rails", "~> 2.0"
 
 # Github view component framework
 gem "view_component", require: "view_component/engine"
+gem "view_component-contrib"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
