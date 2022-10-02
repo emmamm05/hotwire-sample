@@ -10,5 +10,5 @@ eagerLoadControllersFrom("controllers", application)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
 
-const componentContext = require.context("../../components/", true, /(.*)\/.+\.js$/);
-application.load(definitionsFromContext(componentContext));
+// Import components
+eagerLoadControllersFrom("components", application);
