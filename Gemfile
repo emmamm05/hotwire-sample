@@ -54,7 +54,7 @@ gem "bootsnap", require: false
 gem "tailwindcss-rails", "~> 2.0"
 
 # Github view component framework
-gem "view_component", require: "view_component/engine"
+gem "view_component"
 gem "view_component-contrib"
 
 group :development, :test do
@@ -90,3 +90,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "dry-initializer", "~> 3.1"
