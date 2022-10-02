@@ -1,13 +1,10 @@
-<div>
-  <h1> Index </h1>
-  <div data-controller="<%= "message" %>" />
-</div>
-<div class="max-w-2xl">
-  <h1 class="text-xl font-bold my-5">Messages</h1>
+<div class="flex flex-col">
+  <h1>Messages</h1>
 
-  <div id="messages" class="mb-5">
+  <%= render "form" %>
+
+  <div id="messages"> 
     <%= render Message::Component.with_collection(@messages) %>
   </div>
-  <%= render "form" %>
 </div>
 

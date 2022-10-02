@@ -1,13 +1,5 @@
-<div class="flex">
-  <div class="flex-auto">
-    <div data-controller="message_component"/>
-    <%= tag.div(id: dom_id(message), class: "") do %>
-      <%= tag.div(
-        message_body,
-        class: class_names("mr-10", "text-green-600" => recent_message?, "text-gray-800" => !recent_message?)
-      ) %>
-
-    <%= tag.time(timestamp, class: "text-gray-400") %>
-  <% end %>
-  </div>
-</div>
+<div data-controller="<%= "message" %>" />
+<%= tag.div(id: dom_id(message), class: "flex-row") do %>
+  <%= tag.time(timestamp) %>
+  <%= tag.span(message_body, class: "grow") %>
+<% end %>
