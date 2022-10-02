@@ -10,11 +10,9 @@ class MessagesController < ApplicationController
 
   # POST /messages or /messages.json
   def create
-    @message = Message.new(body: params[:body])
+    @message = Message.create!(body: params[:body])
 
-    if @message.save
     Broadcast::Message.new(@message).prepend
-    end
 
     respond_to do |format|
       format.html { redirect_to messages_path }
@@ -24,13 +22,12 @@ class MessagesController < ApplicationController
 
   # DELETE /messages/1 or /messages/1.json
   def destroy
-    @message.destroy
- 
+    @message.destroy!
+
     Broadcast::Message.new(@message).remove
 
     respond_to do |format|
       format.html { redirect_to messages_url, notice: I18n.t("messages.destroy.success") }
-      format.json { head :no_content }
       format.turbo_stream
     end
   end
