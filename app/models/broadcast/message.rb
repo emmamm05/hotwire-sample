@@ -1,9 +1,5 @@
 module Broadcast
   class Message
-    def self.prepend(message:)
-      new(message).prepend
-    end
-
     def initialize(message)
       @message = message
     end
@@ -13,6 +9,13 @@ module Broadcast
         :messages,
         target: "messages",
         html: rendered_component
+      )
+    end
+
+    def remove
+      Turbo::StreamsChannel.broadcast_remove_to(
+        :messages,
+        target: "message_#{message.id}"
       )
     end
 

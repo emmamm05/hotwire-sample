@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  skip_forgery_protection
+
   before_action :set_message, only: %i[destroy]
 
   # GET /messages or /messages.json
@@ -11,7 +13,7 @@ class MessagesController < ApplicationController
     @message = Message.new(body: params[:body])
 
     if @message.save
-      Broadcast::Message.prepend(message: @message)
+    Broadcast::Message.new(@message).prepend
     end
 
     respond_to do |format|
@@ -23,10 +25,13 @@ class MessagesController < ApplicationController
   # DELETE /messages/1 or /messages/1.json
   def destroy
     @message.destroy
+ 
+    Broadcast::Message.new(@message).remove
 
     respond_to do |format|
       format.html { redirect_to messages_url, notice: I18n.t("messages.destroy.success") }
       format.json { head :no_content }
+      format.turbo_stream
     end
   end
 

@@ -1,5 +1,8 @@
 <div data-controller="message" />
 <%= tag.div(id: dom_id(message), class: "flex-row") do %>
+  <%# <% token = form_authenticity_token %>
+  <% token = "none" %>
   <%= tag.time(timestamp) %>
   <%= tag.span(message_body, class: "grow") %>
+  <%= tag.button("delete", data: { action: "message#destroy", href: message_path(@message), method: :delete, csrf_token: token }) %>
 <% end %>

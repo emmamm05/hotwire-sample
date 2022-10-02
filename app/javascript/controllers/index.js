@@ -7,5 +7,5 @@ import { eagerLoadControllersFrom } from "./stimulus-loading"
 eagerLoadControllersFrom("controllers/components", application)
 
 // Lazy load controllers as they appear in the DOM (remember not to preload controllers in import map!)
-import { lazyLoadControllersFrom } from "./stimulus-loading"
-lazyLoadControllersFrom("controllers/components", application)
+// import { lazyLoadControllersFrom } from "./stimulus-loading"
+// lazyLoadControllersFrom("controllers/components", application)
