@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
 
   # GET /messages or /messages.json
   def index
-    @messages = Message.all
+    @messages = Message.all.order(created_at: :desc)
   end
 
   # POST /messages or /messages.json
@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
     @message = Message.new(body: params[:body])
 
     if @message.save
-      Broadcast::Message.append(message: @message)
+      Broadcast::Message.prepend(message: @message)
     end
 
     respond_to do |format|

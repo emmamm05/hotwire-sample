@@ -1,15 +1,15 @@
 module Broadcast
   class Message
-    def self.append(message:)
-      new(message).append
+    def self.prepend(message:)
+      new(message).prepend
     end
 
     def initialize(message)
       @message = message
     end
 
-    def append
-      Turbo::StreamsChannel.broadcast_append_later_to(
+    def prepend
+      Turbo::StreamsChannel.broadcast_prepend_later_to(
         :messages,
         target: "messages",
         html: rendered_component
