@@ -1,13 +1,12 @@
-class MessageComponent < ViewComponent::Base
-  include ActionView::RecordIdentifier
+# frozen_string_literal: true
 
-  def initialize(message:)
-    @message = message
-  end
+class Message::Component < ApplicationViewComponent
+  include ActionView::RecordIdentifier
+  with_collection_parameter :message
+
+  option :message
 
   private
-
-  attr_reader :message
 
   delegate :body, :created_at, to: :message, prefix: true
 

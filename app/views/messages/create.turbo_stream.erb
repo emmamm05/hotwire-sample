@@ -1,5 +1,5 @@
 <%= turbo_stream.replace "new_message_form", partial: "form" %>
 
 <%= turbo_stream.append "messages" do %>
-  <%= render MessageComponent.new(message: @message) %>
+  <%= render Message::Component.new(message: @message) %>
 <% end %>

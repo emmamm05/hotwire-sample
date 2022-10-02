@@ -56,6 +56,7 @@ gem "tailwindcss-rails", "~> 2.0"
 # Github view component framework
 gem "view_component"
 gem "view_component-contrib"
+gem "dry-initializer", "~> 3.1"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -82,6 +83,7 @@ group :development do
   gem "rbs", require: false
   gem "steep", require: false
   gem "rbs_rails"
+  gem "pry", require: false
 end
 
 group :test do
@@ -90,5 +92,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-gem "dry-initializer", "~> 3.1"
