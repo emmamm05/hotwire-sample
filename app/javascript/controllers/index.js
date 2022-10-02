@@ -8,12 +8,4 @@ eagerLoadControllersFrom("controllers", application)
 
 // Lazy load controllers as they appear in the DOM (remember not to preload controllers in import map!)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
-// lazyLoadControllersFrom("ocontrollers", application)
-
-function parseImportmapJson() {
-  return JSON.parse(document.querySelector("script[type=importmap]").text).imports
-}
-
-console.log(parseImportmapJson())
-
-eagerLoadControllersFrom("components", application)
+// lazyLoadControllersFrom("controllers", application)
