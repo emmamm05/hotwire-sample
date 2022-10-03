@@ -9,8 +9,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.create!(body: params[:body])
-
-    Broadcast::Message.new(@message).prepend
+    broadcast.prepend
 
     respond_to do |format|
       format.turbo_stream
@@ -19,8 +18,7 @@ class MessagesController < ApplicationController
 
   def destroy
     @message.destroy!
-
-    Broadcast::Message.new(@message).remove
+    broadcast.remove
 
     respond_to do |format|
       format.turbo_stream
@@ -28,6 +26,13 @@ class MessagesController < ApplicationController
   end
 
   private
+
+  def broadcast
+    @broadcast ||= Broadcast::Strategies::Simple.new(
+      @message,
+      ::Message::Component
+    )
+  end
 
   def set_message
     @message = Message.find(params[:id])
