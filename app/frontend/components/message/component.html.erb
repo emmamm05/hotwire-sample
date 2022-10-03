@@ -1,5 +1,12 @@
-<%= tag.div id: dom_id(message) do %>
-  <%= timestamp %>
-  <%= message_body %>
-  <%= button_to 'Delete', message_path(message), method: :delete %>
+<%= tag.div id: dom_id(message), class: ["w-full", "flex", "flex-row"] do %>
+  <div class="flex-none">
+    <%= tag.label timestamp %>
+  </div>
+  <div class="w-auto mx-auto text-left">
+    <%= tag.label message_body %>
+  </div>
+  <div class="flex-none">
+    <%= button_to 'Delete', message_path(message), method: :delete, class: ["btn-danger"] %>
+  </div>
 <% end %>
+

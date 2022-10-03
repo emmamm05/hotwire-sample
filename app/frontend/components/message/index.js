@@ -6,4 +6,9 @@ export default class Controller extends BaseController {
   connect() {
     console.log("Loaded Controller")
   }
+
+  // Move elsewhere
+  clear(event) {
+    this.element.reset();
+  }
 }

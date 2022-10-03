@@ -27,3 +27,6 @@ module SampleHotwire
     # config.time_zone = "Central Time (US & Canada)"
   end
 end
+
+require "view_component"
+require "primer/view_components/engine"

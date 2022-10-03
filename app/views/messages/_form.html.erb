@@ -1,5 +1,8 @@
-<%= form_with url: messages_path, id: "new_message_form" do |f| %>
-  <%= f.label :body, "Message:", class: "" %>
-  <%= f.text_field :body, placeholder: "What do you want to say?", class: "" %>
-  <%= f.submit "Post message", class: "" %>
+<%= form_with id: "new_message_form", 
+  url: messages_path, 
+  class: "flex flex-row space-x-2", 
+  data: { controller: "message", action: "turbo:submit-end->message#clear" } do |f| %>
+
+  <%= f.text_field :body, placeholder: "What do you want to say?", class: "w-full rounded-md border-gray-200 shadow-sm sm:text-sm" %>
+  <%= f.submit "Post message", class: "btn-primary" %>
 <% end %>
