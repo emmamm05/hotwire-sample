@@ -3,5 +3,12 @@
 import { Controller as BaseController } from "@hotwired/stimulus";
 
 export default class Controller extends BaseController {
-  connect() {}
+  connect() {
+    console.log("Loaded Controller")
+  }
+
+  // Move elsewhere
+  clear(event) {
+    this.element.reset();
+  }
 }
