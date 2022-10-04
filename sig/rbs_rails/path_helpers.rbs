@@ -1,17 +1,12 @@
 interface _RbsRailsPathHelpers
   def rails_mailers_path: (*untyped) -> String
+  def preview_view_components_path: (*untyped) -> String
+  def preview_view_component_path: (*untyped) -> String
   def rails_info_properties_path: (*untyped) -> String
   def rails_info_routes_path: (*untyped) -> String
   def rails_info_path: (*untyped) -> String
-  def posts_path: (*untyped) -> String
-  def new_post_path: (*untyped) -> String
-  def edit_post_path: (*untyped) -> String
-  def post_path: (*untyped) -> String
-  def home_index_path: (*untyped) -> String
-  def other_index_path: (*untyped) -> String
-  def turbo_frame_form_path: (*untyped) -> String
-  def turbo_frame_submit_path: (*untyped) -> String
-  def post_something_path: (*untyped) -> String
+  def messages_path: (*untyped) -> String
+  def message_path: (*untyped) -> String
   def root_path: (*untyped) -> String
   def turbo_recede_historical_location_path: (*untyped) -> String
   def turbo_resume_historical_location_path: (*untyped) -> String
@@ -42,18 +37,13 @@ interface _RbsRailsPathHelpers
   def rails_storage_proxy_path: (*untyped) -> String
   def rails_storage_redirect_path: (*untyped) -> String
   def rails_mailers_url: (*untyped) -> String
+  def preview_view_components_url: (*untyped) -> String
+  def preview_view_component_url: (*untyped) -> String
   def rails_info_properties_url: (*untyped) -> String
   def rails_info_routes_url: (*untyped) -> String
   def rails_info_url: (*untyped) -> String
-  def posts_url: (*untyped) -> String
-  def new_post_url: (*untyped) -> String
-  def edit_post_url: (*untyped) -> String
-  def post_url: (*untyped) -> String
-  def home_index_url: (*untyped) -> String
-  def other_index_url: (*untyped) -> String
-  def turbo_frame_form_url: (*untyped) -> String
-  def turbo_frame_submit_url: (*untyped) -> String
-  def post_something_url: (*untyped) -> String
+  def messages_url: (*untyped) -> String
+  def message_url: (*untyped) -> String
   def root_url: (*untyped) -> String
   def turbo_recede_historical_location_url: (*untyped) -> String
   def turbo_resume_historical_location_url: (*untyped) -> String

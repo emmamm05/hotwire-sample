@@ -1,5 +1,5 @@
-class Post < ::ApplicationRecord
-  extend _ActiveRecord_Relation_ClassMethods[Post, ActiveRecord_Relation, Integer]
+class Message < ::ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Message, ActiveRecord_Relation, Integer]
 
   module GeneratedAttributeMethods
     def id: () -> Integer
@@ -37,42 +37,6 @@ class Post < ::ApplicationRecord
     def restore_id!: () -> void
 
     def clear_id_change: () -> void
-
-    def title: () -> String?
-
-    def title=: (String?) -> String?
-
-    def title?: () -> bool
-
-    def title_changed?: () -> bool
-
-    def title_change: () -> [ String?, String? ]
-
-    def title_will_change!: () -> void
-
-    def title_was: () -> String?
-
-    def title_previously_changed?: () -> bool
-
-    def title_previous_change: () -> Array[String?]?
-
-    def title_previously_was: () -> String?
-
-    def title_before_last_save: () -> String?
-
-    def title_change_to_be_saved: () -> Array[String?]?
-
-    def title_in_database: () -> String?
-
-    def saved_change_to_title: () -> Array[String?]?
-
-    def saved_change_to_title?: () -> bool
-
-    def will_save_change_to_title?: () -> bool
-
-    def restore_title!: () -> void
-
-    def clear_title_change: () -> void
 
     def body: () -> String?
 
@@ -193,12 +157,12 @@ class Post < ::ApplicationRecord
 
   class ActiveRecord_Relation < ::ActiveRecord::Relation
     include GeneratedRelationMethods
-    include _ActiveRecord_Relation[Post, Integer]
-    include Enumerable[Post]
+    include _ActiveRecord_Relation[Message, Integer]
+    include Enumerable[Message]
   end
 
   class ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
     include GeneratedRelationMethods
-    include _ActiveRecord_Relation[Post, Integer]
+    include _ActiveRecord_Relation[Message, Integer]
   end
 end
