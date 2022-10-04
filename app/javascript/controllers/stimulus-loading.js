@@ -78,7 +78,7 @@ function controllerFilename(name, under) {
 function registerController(name, module, application) {
   if (name in registeredControllers) return
 
-  console.log("Stimulus loading view component: ", name)
+  console.log("Load stimulus component: ", name)
   application.register(name, module.default)
   registeredControllers[name] = true
 }

@@ -3,9 +3,7 @@
 import { Controller as BaseController } from "@hotwired/stimulus";
 
 export default class Controller extends BaseController {
-  connect() {
-    console.log("Loaded Controller")
-  }
+  connect() {}
 
   // Move elsewhere
   clear(event) {
