@@ -1,8 +1,8 @@
-<%= tag.div id: dom_id(message), class: ["w-full", "flex", "flex-row"] do %>
-  <div class="flex-none">
+<%= tag.div id: dom_id(message), class: ["w-full", "flex"] do %>
+  <div class="flex-none w-74">
     <%= tag.label timestamp %>
   </div>
-  <div class="w-auto mx-auto text-left">
+  <div class="flex-grow text-left px-5">
     <%= tag.label message_body %>
   </div>
   <div class="flex-none">
