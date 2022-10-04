@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-class Message::Component < ApplicationViewComponent
+class Messages::Message::Component < ApplicationViewComponent
   include ActionView::RecordIdentifier
-  with_collection_parameter :message
 
+  with_collection_parameter :message
   option :message
 
   private

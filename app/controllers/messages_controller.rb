@@ -30,7 +30,7 @@ class MessagesController < ApplicationController
   def broadcast
     @broadcast ||= Broadcast::Strategies::Simple.new(
       @message,
-      ::Message::Component
+      ::Messages::Message::Component
     )
   end
 

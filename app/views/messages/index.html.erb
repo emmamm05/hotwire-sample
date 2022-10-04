@@ -18,7 +18,7 @@
   <div id="main-section" class="flex flex-col w-full space-y-5"> 
     <%= render "form" %>
     <div id="messages", class="flex flex-col space-y-5"> 
-      <%= render Message::Component.with_collection(@messages) %>
+      <%= render Messages::Message::Component.with_collection(@messages) %>
     </div>
   </div>
 </div>
