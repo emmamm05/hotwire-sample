@@ -56,7 +56,6 @@ gem "tailwindcss-rails", "~> 2.0"
 # Github view component framework
 gem "view_component"
 gem "view_component-contrib"
-gem "primer_view_components"
 gem "dry-initializer", "~> 3.1"
 
 group :development, :test do
