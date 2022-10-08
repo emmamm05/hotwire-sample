@@ -56,6 +56,7 @@ gem "tailwindcss-rails", "~> 2.0"
 # Github view component framework
 gem "view_component"
 gem "view_component-contrib"
+
 gem "dry-initializer", "~> 3.1"
 
 group :development, :test do
@@ -77,12 +78,15 @@ group :development do
   # gem "spring"
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
+  gem "standard", require: false
+
   gem "solargraph", require: false
   gem "solargraph-standardrb", require: false
-  gem "standard", require: false
+
   gem "rbs", require: false
-  gem "steep", require: false
   gem "rbs_rails"
+  gem "steep", require: false
+
   gem "pry", require: false
 end
 
