@@ -19,3 +19,15 @@
 .btn-danger { 
   @apply inline-block rounded border border-red-600 bg-red-600 px-3 py-1 text-sm font-medium text-white hover:bg-transparent hover:text-red-600 focus:outline-none focus:ring active:text-red-500;
 }
+
+.nav-container {
+  @apply flex-col space-y-1;
+}
+
+.nav-item-selected {
+  @apply block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700;
+}
+
+.nav-item-deselected {
+  @apply block rounded-lg px-4 py-2 text-sm font-medium text-gray-700;
+}
