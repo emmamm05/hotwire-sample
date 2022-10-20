@@ -1,0 +1,7 @@
+= tag.div id: dom_id(message), class: "w-full flex" do
+  .flex-none.w-74
+    = tag.label timestamp
+  .flex-grow.text-left.px-5
+    = tag.label timestamp
+  .flex-none
+    = button_to 'Delete', message_path(message), method: :delete, class: "btn-danger"

@@ -1,0 +1,5 @@
+.flex-col.w-full.space-y-5
+  = turbo_stream_from "messages"
+  == render Messages::New::Component.new
+  #messages.flex-col-space-y-5
+    == render Messages::Message::Component.with_collection(@messages)

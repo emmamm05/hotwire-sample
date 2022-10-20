@@ -57,7 +57,14 @@ gem "tailwindcss-rails", "~> 2.0"
 gem "view_component"
 gem "view_component-contrib"
 
+# DSL for building class initializer with params and options
 gem "dry-initializer", "~> 3.1"
+
+# fast, lightweight templating engine
+gem "slim"
+
+# generators
+gem "slim-rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
